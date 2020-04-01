@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <!--meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@freepc_yuki">
+  <meta name="twitter:creator" content="@freepc_yuki">
+  <meta name="twitter:title" content="長岡勇輝ポートフォリオサイト">
+  <meta name="twitter:description" content="職務経歴書、制作物一覧">
+  <meta name="twitter:image:src" content="https://www.nagaoka-portfolio.site/image/twitter-card.png"-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>島﨑　悠 ポートフォリオサイト</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="image/icomoon/style.css">
+  <!--link rel="shortcut icon" href="image/logo.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script-->
+  <!-- ＃リンクのスムーズスクロール -->
+  <script>
+    $(function(){
+      // #で始まるリンクをクリックしたら実行されます
+      $('a[href^="#"]').click(function() {
+        // スクロールの速度
+        var speed = 400; // ミリ秒で記述
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+      });
+    });
+
+  </script>
+  <script>
+    $(function(){
+
+      	$(window).load(function() {
+      	    $("body").removeClass("preload");
+      	});
+      
+      
+        var _window = $(window),
+          _header = $('.header_nav'),
+          heroBottom;
+      
+      	_window.on('scroll',function(){
+      	    heroBottom = $('.hero').height();
+      	    if(_window.scrollTop() > heroBottom){
+      	        $('.header_nav').addClass('fixed');
+      	    }
+      	    else{
+      	        $('.header_nav').removeClass('fixed');
+      	    }
+  	});
+  	_window.trigger('scroll');
+  </script>
+  <title>jQuery</title>
+</head>
+<body class="preload">
+  <div class="top_wrapper hero">
+    <div class="top_message">
+      <div class="red-bold">ただ今、転職活動中！</div>
+      <p>
+        希望職種：バックエンドエンジニア<br>
+        学習中言語：Ruby,Rails<br>
+        希望勤務地：東京<br>
+        希望年収：350万円/年 以上
+      </p>
+      <div class="lead">興味を持って頂きましたらご連絡ください！</div>
+    </div>
+  </div>
+  
+  <div class="background_color">
+    <header class="header_nav flex space">
+      <h1 class="top_logo">
+        <a href="#">島﨑　悠 Portfolio Site</a>
+      </h1>
+
+      <nav class="menu open flex">
+        <ul class="flex hover_blue">
+          <li><a href="#section1">about me</a></li>
+          <li><a href="#section2">Rails</a></li>
+          <li><a href="#section3">Other</a></li>
+          <!--li><a href="#section4">WordPress</a></li>
+          <li><a href="#section5">JavaScript</a></li>
+          <li><a href="#section6">個人サービス</a></li>
+          <li><a href="#section7">Other</a></li-->
+        </ul>
+      </nav>
+
+      <!--ハンバーガーメニューの中-->
+      <nav class="menu" id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <div class="side_wrapper">
+            <div class="side_top">
+              <p class="profile_top">カテゴリ</p>
+            </div>
+            <ul class="hover_blue">
+              <li><a href="#section1">about me</a></li>
+              <li><a href="#section2">Rails</a></li>
+              <li><a href="#section3">Other</a></li>
+              <!--li><a href="#section4">WordPress</a></li>
+              <li><a href="#section5">JavaScript</a></li>
+              <li><a href="#section6">個人サービス</a></li>
+              <li><a href="#section7">Other</a></li-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="text-center pt_70" id="section1">
+      <div class="front_text">about me<h2 class="back_text">about me</h2></div>
+      <div class="container">
+
+        <div class="left_space">
+          <img src="image/yuki-profile2.jpg" class="profile_image" alt="島﨑　悠（しまざき ゆう）">
+          <div class="sns">
+            <ul class="text_center">
+              <li><a href="https://github.com/risottoupdate" class="github" target="_blank">GitHub</a></li>
+              <li><a href="https://qiita.com/shi_ma_yu" class="Qiita" target="_blank">Qiita</a></li>
+              <li><a href="mailto:yu.yu.yu.bnpg@gmail.com" class="email" target="_blank">E-mail</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">パーソナル情報</h3>
+              <p>
+                島﨑　悠（しまざき ゆう）<br>
+                1997年02月06日生まれ / 23歳
+              </p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-address-card"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">経歴</h3>
+              <ul>
+                <li>・2019年3月 ： 高崎健康福祉大学 保健医療学部学部 看護学科 卒業</li>
+                <li>
+                  ・2019年4月 ： 地域医療支援病院(看護師) 就職
+                  <div class="indent">
+                    地域住民や連携病院と協力し、無差別・平等な医療実践に惹かれ<br>
+                    入社を決意しました。<br>
+                    入社1年目に急性期病棟に配属されました。<br>
+                    急性期病棟では患者の容態変化が早く、スタッフ数が少ない状態でした。<br>
+                    それに対し効率的に動けるよう、日々自己に課題を課しながら看護を実践し多くの患者から評価を頂きました。これにより私はその年に<span class="red-bold">最高評価を頂きました。</span><br>
+                    真剣に課題と向き合い、毎日改善策を考えていました<br>
+                    <span class="red-bold">常に頭を使い改善策を考える癖</span>がこの時身につきました。
+                  </div>
+                </li>
+                <li>・2019年12月 ： 地域拠点病院 退職</li>
+                <li>・現在転職活動中</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">2020年に学習したプログラミングスキル</h3>
+              <p class="red-bold">1月26日から現在まで1日も休む事なく継続して学習を続けています</p>
+              <ul>
+                <li>HTML,CSS</li>
+                <li>JavaScript,jQuery</li>
+                <li>Ruby,Ruby on Rails</li>
+              </ul>
+              <p>※成果物については下記参照ください</p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-star"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">どの様な業務をしたいか</h3>
+              <p>
+                <span class="red-bold">多くの人の役に立つ面白いアプリの開発</span>に携わりたいです。<br>
+                その為に必要な言語やスキルを常に取り入れていける環境で働きたいです。
+              </p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-thumbs-up"></i>
+            </div>
+            <div id="future" class="info">
+              <h3 class="top_info">どの様なエンジニアになりたいか</h3>
+              <p>
+                看護師という安定した職業を辞めてまでIT企業を志した理由は、<br>
+                <span class="red-bold">「大きな変化による価値を生み出し、多くの人の役に立ちたい」</span>からです。
+              </p>
+              <section>
+                <h4>1.変化を起こす</h4>
+                <p>
+                  今まで当たり前と思われていた事を疑い、常に改善案を考え、とにかくどんどん行動していきたいです。<br>
+                  そして、新しい事に挑戦し、自分自身も大きく変化していきたいと思います。
+                </p>
+              </section>
+              <section>
+                <h4>2.価値を生む</h4>
+                <p>
+                  価値とはそのサービスや商品を支持してくれる人の数だと考えています。<br>
+                  私が提供するサービスにより多くの人に影響を与え、喜んで貰える事を常に意識して行動しております。<br>
+                  また、ITにはそれが実現可能だと思い、ITへの道を志しました。
+                </p>
+              </section>
+              <section>
+                <h4>3.影響力を持つ</h4>
+                <p>
+                  私が挑戦の中で得た情報やスキルは、どんどん他者へ提供していこうと考えております。<br>
+                  SNSを使って情報発信したり、技術記事を発信したりと、積極的に実行していきます。それにより1人でも多くの人に影響を与える事ができ、それが僕の志す変化による価値提供に必要な条件だと考えています。
+                </p>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    
+    <section class="text-center padding_top" id="section2">
+      <div class="front_text">Ruby on Rails<h2 class="back_text">Ruby on Rails</h2></div>
+      <h3 class="content_title">Todoアプリ</h3>
+      <div class="container">
+
+        <div class="left_space">
+          <p>制作したアプリへのリンク</p>
+          <a href="https://floating-island-69366.herokuapp.com/" target="_blank"><img src="todo-scrin.png" alt="Todo_app"></a>
+        </div>
+
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-chalkboard"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">アプリの概要</h4>
+              <ul>
+                <li>・予定を管理するアプリ</li>
+                <li>・友人や家族との共有が可能(フォロー機能搭載)</li>
+                <li>・ユーザー検索可能</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">ソースコード</h4>
+              <a href="https://github.com/yuyuyu-26/Todo_app" class="github blue-link" target="_blank">GitHub(Todo_app)</a>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・初めてRailsでCRUD処理を実装して制作したアプリ</li>
+                <li>・AWSにアプリをデプロイしています。AWSへのデプロイ方法をQiitaへ投稿</li>
+                <li>  →Qiita(<a href="#">AWS(EC2)にRailsアプリをイチから上げる方法</a>)</li>
+                <li>・ログインしないと閲覧できないページやパスワードを暗号化して保存する等の処理を実装</li>
+                <li>・フォロー機能により、相互フォローすることでお互いの予定の共有化</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-gem"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">使用したGem</h4>
+              <ul>
+                <li>・bootstrap</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    
+    <div class="text-center padding_top" id="section3">
+      <p class="front_text">Other<span class="back_text">Other</span></p>
+      <h3 class="content_title">Qiitaへ技術記事投稿</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>投稿したQiita記事の一部</p>
+          <a href="image/qiita.png" data-lightbox="group"><img src="image/qiita.png" width="300" alt="Qiitaへ技術記事投稿"></a>
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・cloud9で作成したソースコードをBitbucketやGitHubへの保存方法を解説</li>
+                <li>・勉強した内容を積極的にアウトプット</li>
+              </ul>
+              <p class="red-bold pt_30">→学んだ知識を整理しアウトプットする事を常に意識しています</p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-plus-square"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">Qiita記事</h4>
+              <p>作成したQiita記事</p>
+              <a href="https://qiita.com/shi_ma_yu/items/896ed09ff2b9f24708a6" target="_blank" class="blue-link">初めてのBitbucket</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="footer_bottom">
+    <p>Created by YU SHIMAZAKI</p>
+  </div>
+</body>
+  
+</html>
