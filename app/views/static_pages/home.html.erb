@@ -53,7 +53,8 @@
         <ul class="flex hover_blue">
           <li><a href="#section1">about me</a></li>
           <li><a href="#section2">Rails</a></li>
-          <li><a href="#section3">Other</a></li>
+          <li><a href="#section3">JavaScript</a></li>
+          <li><a href="#section4">Other</a></li>
         </ul>
       </nav>
 
@@ -70,7 +71,8 @@
             <ul class="hover_blue">
               <li><a href="#section1">about me</a></li>
               <li><a href="#section2">Rails</a></li>
-              <li><a href="#section3">Other</a></li>
+              <li><a href="#section3">JavaScript</a></li>
+              <li><a href="#section4">Other</a></li>
             </ul>
           </div>
         </div>
@@ -202,7 +204,7 @@
 
         <div class="left_space">
           <p>制作したアプリへのリンク</p>
-          <a href="https://floating-island-69366.herokuapp.com/" target="_blank"><img src="todo-scrin.png" alt="Todo_app"></a>
+          <a href="https://floating-island-69366.herokuapp.com/" target="_blank"><img src="todo_app.png" alt="Todo_app"></a>
         </div>
 
         <div class="right_space">
@@ -236,7 +238,7 @@
               <ul>
                 <li>・初めてRailsでCRUD処理を実装して制作したアプリ</li>
                 <li>・herokuにアプリをデプロイ</li>
-                <li>・ユーザーの状態による制限</li>
+                <li>・ユーザーの状態による機能制限</li>
                 <li>・他者とのタスク共有が可能</li>
               </ul>
             </div>
@@ -259,7 +261,7 @@
 
         <div class="left_space">
           <p>制作したアプリへのリンク</p>
-          <a href="#" target="_blank"><img src="home1.png" alt="Study English"></a>
+          <a href="https://calm-basin-29354.herokuapp.com" target="_blank"><img src="study_english.png" alt="Study English"></a>
         </div>
 
         <div class="right_space">
@@ -289,12 +291,14 @@
               <i class="far fa-lightbulb"></i>
             </div>
             <div class="info">
-              <h4 class="top_info">こだわりポイント（作成中）</h4>
+              <h4 class="top_info">こだわりポイント</h4>
               <ul>
                 <li>・ブラウザ/アプリ化対応</li>
-                <li>・herokuにアプリをデプロイ予定。</li>
-                <li>・覚えた単語数や勉強日を数値として表示</li>
-                <li>・英単語/英文法ともに学習可</li>
+                <li>・herokuにアプリをデプロイ</li>
+                <li>・javascriptで実践的なテストの雰囲気を構築</li>
+                <li>・テスト解答後、自動正誤判定</li>
+                <li>・rspecでテスト実施（リファクタリング済）</li>
+                <li>・CRUDなど基本的な機能搭載</li>
               </ul>
             </div>
           </section>
@@ -306,6 +310,52 @@
               <h4 class="top_info">使用したGem</h4>
               <ul>
                 <li>・bootstrap</li>
+                <li>・carrierwave</li>
+                <li>・rspec-rails</li>
+                <li>・factory_bot_rails</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+      
+    <section class="text-center padding_top" id="section3">
+      <div class="front_text">JavaScript<h2 class="back_text">JavaScript</h2></div>
+      <h3 class="content_title">Study English</h3>
+      <div class="container">
+
+        <div class="left_space">
+          <p>問題開始前</p>
+          <a href="https://calm-basin-29354.herokuapp.com" target="_blank"><img src="answer1.png" alt="Study English"></a>
+          <p>解答中</p>
+          <a href="https://calm-basin-29354.herokuapp.com" target="_blank"><img src="answer2.png" alt="Study English"></a>
+          <p>時間切れ</p>
+          <a href="https://calm-basin-29354.herokuapp.com" target="_blank"><img src="answer3.png" alt="Study English"></a>
+          <p>正誤判定</p>
+          <a href="https://calm-basin-29354.herokuapp.com" target="_blank"><img src="answer4.png" alt="Study English"></a>
+        </div>
+
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">ソースコード</h4>
+              <a href="https://github.com/yuyuyu-26/study_english" class="github blue-link" target="_blank">GitHub(study_english)</a>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・制限時間有り</li>
+                <li>・未達成の単語の中からランダムで出題</li>
+                <li>・ネットテストのような環境</li>
               </ul>
             </div>
           </section>
@@ -330,7 +380,7 @@
               <ul>
                 <li>言語・・・HTML, CSS, JavaScript, Ruby, SQL, </li>
                 <li>フレームワーク・・・Ruby and Rails</li>
-                <li>ツール・・・Git, Bitbucket</li>
+                <li>ツール・・・GitHub, Bitbucket</li>
                 <li>サーバー・・・AWS cloud9 EC2</li>
                 <li>DB・・・SQLite3</li>
               </ul>
@@ -343,10 +393,11 @@
             <div class="info">
               <h4 class="top_info">実装機能</h4>
               <ul>
-                <li>・ログイン機能</li>
-                <li>・フォロー機能</li>
+                <li>・基本的なCRUD機能+画像機能</li>
+                <li>・リレーション機能</li>
                 <li>・TODO機能</li>
-                <li>・ユーザー登録機能など</li>
+                <li>・rspecを使用してのテスト実装</li>
+                <li>・レスポンシブ対応</li>
               </ul>
             </div>
           </section>
@@ -354,7 +405,7 @@
       </div>
     </section>
     
-    <div class="text-center padding_top" id="section3">
+    <div class="text-center padding_top" id="section4">
       <p class="front_text">Other<span class="back_text">Other</span></p>
       <h3 class="content_title">Qiitaへ技術記事投稿</h3>
       <div class="container">
@@ -384,6 +435,32 @@
               <h4 class="top_info">Qiita記事</h4>
               <p>作成したQiita記事</p>
               <a href="https://qiita.com/shi_ma_yu/items/896ed09ff2b9f24708a6" target="_blank" class="blue-link">初めてのBitbucket</a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <h3 class="content_title">EXP</h3>
+      <div class="container">
+        <div class="left_space">
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">アプリ制作を通しての成長</h4>
+              <ul>
+                <li>・行動の継続力</li>
+                <li>・スキル等の情報収集能力</li>
+                <li>・基本的なhtml,cssの操作</li>
+                <li>・GitHub/Bitbucketの使用方法</li>
+                <li>・疑問点やエラー発生時の自己解決能力</li>
+                <li>・アプリ制作や知識を増やすことへの楽しさ</li>
+                <li>・Ruby,RailsとJavaScriptを組み合わせた操作</li>
+                <li>・Ruby,Rails,rspecを使用してのアプリ制作の一連</li>
+              </ul>
+              <p class="red-bold pt_30">→日々楽しみながら努力を継続しています</p>
             </div>
           </section>
         </div>
